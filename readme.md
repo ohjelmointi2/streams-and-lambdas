@@ -10,7 +10,7 @@ Seuraa näitä vaiheita päästäksesi alkuun harjoitusten kanssa:
 1. **Kloonaa repositio**: Kloonaa Git-repositorio paikalliselle koneellesi. Huom! Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi!
 
     ```bash
-    git clone https://github.com/yourusername/virta-ja-lambdatreeni.git
+    git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
     ```
 
 1. **Avaa projekti VS Code:ssa**
@@ -38,7 +38,7 @@ Jokainen harjoitus on rakennettu seuraavasti:
         * Testien tutkiminen ei ole välttämätöntä tehtävien ratkaisemiseksi, mutta siitä voi olla apua.
 
 
-Tsemppiä tehtävään!
+Tsemppiä koodaukseen!
 
 ----
 
