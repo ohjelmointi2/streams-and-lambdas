@@ -7,7 +7,7 @@ Tämä repositio sisältää harjoituksia, joiden avulla voit harjoitella Javan 
 
 Seuraa näitä vaiheita päästäksesi alkuun harjoitusten kanssa:
 
-1. **Kloonaa repositio**: Kloonaa Git-repositorio paikalliselle koneellesi. Huom! Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi!
+1. **Kloonaa repositio**: Kloonaa Git-repositorio paikalliselle koneellesi. Huom! Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Tarkemmat ohjeet oman kopion luomiseksi löydät opintojakson ohjeista.
 
     ```bash
     git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
