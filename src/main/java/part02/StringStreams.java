@@ -1,6 +1,7 @@
 package part02;
 
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StringStreams {
@@ -12,7 +13,7 @@ public class StringStreams {
             "Debugging", "Syntax", "Java", "Python", "C++", "JavaScript", "HTML", "CSS");
 
     /**
-     * Returns a stream of all the words in the list.
+     * Returns a stream of all the words in the list defined in this class.
      *
      * @return a Stream of all words
      */
@@ -21,7 +22,8 @@ public class StringStreams {
     }
 
     /**
-     * Returns a stream of words that start with the specified substring.
+     * Returns a stream of words defined in this class that start with the specified
+     * substring.
      *
      * @param substring the substring to filter by
      * @return a Stream of words starting with the given substring
@@ -31,7 +33,8 @@ public class StringStreams {
     }
 
     /**
-     * Returns a stream of words that include the specified substring.
+     * Returns a stream of words defined in this class that include the specified
+     * substring in a case-insensitive way.
      *
      * @param substring the substring to filter by
      * @return a Stream of words including the given substring
@@ -41,7 +44,18 @@ public class StringStreams {
     }
 
     /**
-     * Returns a stream of words in uppercase.
+     * Returns a stream of words defined in this class that DO NOT include the
+     * specified substring in a case-insensitive way.
+     *
+     * @param excludeSubstring the substring to exclude by
+     * @return a Stream of words not the given substring
+     */
+    public Stream<String> streamWordsNotIncludingSubstring(String excludeSubstring) {
+        return null;
+    }
+
+    /**
+     * Returns a stream of words defined in this class in uppercase.
      *
      * @return a Stream of words in uppercase
      */
@@ -50,7 +64,7 @@ public class StringStreams {
     }
 
     /**
-     * Returns a stream of words in lowercase.
+     * Returns a stream of words defined in this class in lowercase.
      *
      * @return a Stream of words in lowercase
      */
@@ -59,9 +73,20 @@ public class StringStreams {
     }
 
     /**
-     * Returns a stream of words using the FizzBuzz pattern.
+     * Returns the lengths of each word defined in this class.
      *
-     * @return a Stream of words in the FizzBuzz pattern
+     * @return
+     */
+    public IntStream streamLengthsOfWords() {
+        return null;
+    }
+
+    /**
+     * Returns a stream of strings using the FizzBuzz pattern. The stream should
+     * provide at least 1 000 0000 first strings in the pattern, starting with:
+     * "1", "2", "fizz", "4", "buzz"...
+     *
+     * @return a Stream of strings in the FizzBuzz pattern
      */
     public Stream<String> fizzBuzz() {
         return null;

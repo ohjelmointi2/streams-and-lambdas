@@ -1,5 +1,6 @@
 package part01;
 
+import java.util.Random;
 import java.util.stream.IntStream;
 
 /**
@@ -49,12 +50,24 @@ public class NumericStreams {
     }
 
     /**
-     * Generates a stream of squares of integer numbers starting from 1 up to
-     * Integer.MAX_VALUE.
+     * Generates a stream of squares of integer numbers starting from 1.
      *
      * @return an IntStream containing the squares of integer numbers
      */
     public IntStream streamSquares() {
         return IntStream.rangeClosed(1, (int) Math.sqrt(Integer.MAX_VALUE)).map(n -> n * n);
+    }
+
+    /**
+     *
+     * @param min
+     * @param max
+     * @return
+     */
+    public IntStream infiniteRandomNumbers() {
+        // See
+        // https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html#ints()
+        Random random = new Random();
+        return random.ints(); // (Long.MAX_VALUE, min, max + 1);
     }
 }
