@@ -20,7 +20,7 @@ public class PredicatesWithStreams {
      */
     public boolean allPositive(IntStream numbers) {
         // hint: see the `allMatch()` method
-        return null; // TODO
+        return false; // TODO
     }
 
     /**
@@ -37,7 +37,7 @@ public class PredicatesWithStreams {
          * Then, use the `isPresent()` method to check if the OptionalInt contains a
          * value.
          */
-        return null; // TODO
+        return -1; // TODO
     }
 
     /**
@@ -48,6 +48,6 @@ public class PredicatesWithStreams {
      */
     public boolean containsNoNulls(Stream<String> strings) {
         // hint: see the `noneMatch()` method
-        return null; // TODO
+        return false; // TODO
     }
 }

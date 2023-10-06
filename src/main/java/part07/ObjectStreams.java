@@ -58,6 +58,6 @@ public class ObjectStreams {
          * Hint: you can use the `getAges()` method above to get a stream of the ages.
          * You may remember `mapToInt()` and `average` from previous exercises.
          */
-        return null; // TODO
+        return -1; // TODO
     }
 }
