@@ -30,7 +30,7 @@ public class MappingStreams {
      */
     public IntStream doubleValuesInStream(IntStream numbers) {
         // hint: use the map() method to double the values in the stream.
-        return numbers.map(x -> x * 2);
+        return null; // TODO
     }
 
     /**
@@ -43,7 +43,7 @@ public class MappingStreams {
      */
     public IntStream multiplyValuesInStream(IntStream numbers, int multiplier) {
         // hint: use the map() method to multiply the values in the stream.
-        return numbers.map(x -> x * multiplier);
+        return null; // TODO
     }
 
     /**
@@ -53,9 +53,11 @@ public class MappingStreams {
      * @return an IntStream containing the numbers from the list
      */
     public IntStream mapListToIntStream(List<Integer> numbers) {
-        // hint: use the stream() method to create a Stream<Integer>.
-        // Then, use mapToInt() method to convert a Stream<Integer> to an IntStream.
-        return numbers.stream().mapToInt(Integer::intValue);
+        /*
+         * hint: First, use the stream() method to create a Stream<Integer>.
+         * Then, use mapToInt() method to convert that to an IntStream.
+         */
+        return null; // TODO
     }
 
     /**
@@ -69,8 +71,8 @@ public class MappingStreams {
      * @return a stream of strings with the prefix added
      */
     public Stream<String> prefixAllStrings(Stream<String> strings, String prefix) {
-        // hint: use the map() method to add the prefix to each string in the stream.
-        return strings.map(str -> prefix + str);
+        // hint: once again, use the map() method to add the prefix
+        return null; // TODO
     }
 
     /**
@@ -84,8 +86,7 @@ public class MappingStreams {
      * @return a stream of strings with the suffix added
      */
     public Stream<String> suffixAllStrings(Stream<String> strings, String suffix) {
-        // hint: use the map() method to add the suffix to each string in the stream.
-        return strings.map(str -> str + suffix);
+        return null; // TODO
     }
 
     /**
@@ -100,10 +101,11 @@ public class MappingStreams {
      * @return
      */
     public Stream<String> removeSuffix(Stream<String> strings, String suffix) {
-        // hint: use the map() method to remove the suffix from each string.
-        // If your expression is too complex, you can define a separate method that
-        // you call from the lambda expression.
-        return strings.map(str -> str.endsWith(suffix) ? str.substring(0, str.length() - suffix.length()) : str);
+        /*
+         * hint: If your expression is too complex, you can define a separate method
+         * that you call from the lambda expression.
+         */
+        return null; // TODO
     }
 
     /**
@@ -125,7 +127,7 @@ public class MappingStreams {
          * - otherwise, the string is the number as a string
          */
 
-        // hint: see the mapToObj() method to convert an IntStream to a Stream<String>.
-        return null;
+        // hint: see the mapToObj() method in IntStream
+        return null; // TODO
     }
 }

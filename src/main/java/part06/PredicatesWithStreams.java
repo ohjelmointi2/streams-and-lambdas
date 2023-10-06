@@ -19,9 +19,8 @@ public class PredicatesWithStreams {
      * @return true if all the numbers in the stream are over zero
      */
     public boolean allPositive(IntStream numbers) {
-        // hint: use the `allMatch()` method to check if all the numbers in the stream
-        // pass a check.
-        return numbers.allMatch(x -> x > 0);
+        // hint: see the `allMatch()` method
+        return null; // TODO
     }
 
     /**
@@ -33,10 +32,12 @@ public class PredicatesWithStreams {
      * @return the first positive number in the stream or 0 if there are no positive
      */
     public int getFirstPositive(IntStream numbers) {
-        // hint: use the `findFirst()` method to get the first element in the stream.
-        // Then, use the `isPresent()` method to check if the OptionalInt contains a
-        // value.
-        return numbers.findFirst().orElse(0);
+        /*
+         * hint: use the `findFirst()` method to get the first element in the stream.
+         * Then, use the `isPresent()` method to check if the OptionalInt contains a
+         * value.
+         */
+        return null; // TODO
     }
 
     /**
@@ -46,8 +47,7 @@ public class PredicatesWithStreams {
      * @return true if the stream contains no null values
      */
     public boolean containsNoNulls(Stream<String> strings) {
-        // hint: use the `noneMatch()` method to check if none of the elements in the
-        // stream pass a check.
-        return strings.noneMatch(x -> x == null);
+        // hint: see the `noneMatch()` method
+        return null; // TODO
     }
 }

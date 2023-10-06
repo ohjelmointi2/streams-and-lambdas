@@ -19,7 +19,7 @@ public class ObjectStreams {
      * @return a list of the lengths of the strings
      */
     public List<Integer> getLengths(Stream<String> strings) {
-        return strings.map(String::length).toList();
+        return null; // TODO
     }
 
     /**
@@ -30,7 +30,7 @@ public class ObjectStreams {
      */
     public List<Integer> getAges(Stream<Person> persons) {
         // Hint: This method is very similar to the getLengths() method above!
-        return persons.map(Person::age).toList();
+        return null; // TODO
     }
 
     /**
@@ -43,7 +43,7 @@ public class ObjectStreams {
      * @return
      */
     public List<String> getNames(Stream<Person> persons) {
-        return persons.map(Person::name).toList();
+        return null; // TODO
     }
 
     /**
@@ -54,8 +54,10 @@ public class ObjectStreams {
      * @return the average age of the persons or 0 if the stream is empty
      */
     public double getAverageAge(Stream<Person> persons) {
-        // Hint: you can use the `getAges()` method above to get a stream of the ages.
-        // You may remember `mapToInt()` and `average` from previous exercises.
-        return persons.mapToInt(Person::age).average().orElse(0);
+        /*
+         * Hint: you can use the `getAges()` method above to get a stream of the ages.
+         * You may remember `mapToInt()` and `average` from previous exercises.
+         */
+        return null; // TODO
     }
 }

@@ -30,7 +30,7 @@ public class OptionalValues {
          * is empty.
          */
 
-        return stream.average().orElse(0.0); // TODO: use the IntStream to get the average
+        return -1; // TODO
     }
 
     /**
@@ -47,6 +47,6 @@ public class OptionalValues {
          * like OptionalDouble in the average() method.
          */
 
-        return stream.max().orElse(0);
+        return -1; // TODO
     }
 }

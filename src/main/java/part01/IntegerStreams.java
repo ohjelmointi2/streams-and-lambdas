@@ -30,7 +30,7 @@ public class IntegerStreams {
          * numbers. A closed range means that the 'to' value is included in the range,
          * whereas an open range does not include the 'to' value.
          */
-        return IntStream.rangeClosed(from, to);
+        return null; // TODO
     }
 
     /**
@@ -40,9 +40,11 @@ public class IntegerStreams {
      * @return the sum of the numbers in the stream
      */
     public int sum(IntStream stream) {
-        // hint: see the documentation of IntStream about how to get the sum of the
-        // numbers in the stream.
-        return stream.sum();
+        /*
+         * hint: see the documentation of IntStream about how to get the sum of the
+         * numbers in a stream.
+         */
+        return -1; // TODO
     }
 
     /**
@@ -56,8 +58,10 @@ public class IntegerStreams {
      *         Integer.MAX_VALUE)
      */
     public long countNumbersInStream(IntStream stream) {
-        // hint: see the documentation of IntStream about how to count the number of
-        // elements in the stream.
-        return stream.count();
+        /*
+         * hint: see the documentation of IntStream about how to count the number of
+         * elements in the stream.
+         */
+        return -1; // TODO
     }
 }

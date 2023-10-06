@@ -5,6 +5,11 @@ import java.util.stream.Stream;
 
 /**
  * In this class, you will learn how to convert a List to a Stream and back.
+ * You will also learn how to limit the number of elements in a Stream.
+ *
+ * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#stream()
+ * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html#toList()
+ *
  */
 public class ListsAndStreams {
 
@@ -15,8 +20,10 @@ public class ListsAndStreams {
      * @return a Stream of the same strings
      */
     public Stream<String> makeStream(List<String> strings) {
-        // hint: see the documentation of List about how to create a Stream from a List.
-        return strings.stream();
+        /*
+         * hint: see the documentation of List about how to create a Stream from a List.
+         */
+        return null; // TODO
     }
 
     /**
@@ -26,9 +33,7 @@ public class ListsAndStreams {
      * @return a List of the same strings
      */
     public List<String> makeList(Stream<String> stream) {
-        // hint: see the documentation of Stream about how to create a List from a
-        // Stream.
-        return stream.toList();
+        return null; // TODO
     }
 
     /**
@@ -40,9 +45,7 @@ public class ListsAndStreams {
      * @return a Stream of the first strings in the list
      */
     public Stream<String> streamWithLimit(List<String> strings, int count) {
-        // hint: see the documentation of Stream about how to limit the number of
-        // elements in a Stream.
-        return strings.stream().limit(count);
+        return null; // TODO: remember to check the documentation of Stream!
     }
 
 }
