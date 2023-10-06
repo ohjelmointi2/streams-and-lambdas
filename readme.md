@@ -1,44 +1,42 @@
-# Streams & Lambdas Kata
+# Streamit ja Lambdat
 
-Tämä repositio sisältää harjoituksia, joiden avulla voit harjoitella Javan stream:ien ja lambda-lausekkeiden perusteita. Jokainen harjoitus sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen stream:eja ja lambdoja. Suorita harjoitukset valmiiksi ja tarkista ratkaisut ajamalla esikirjoitetut JUnit-yksikkötestit Gradlella.
+Tässä tehtävärepositoriossa perehdytään Javan stream-apiin sekä lambda-lausekkeisiin.
 
-
-## Aloitusohjeet
-
-Seuraa näitä vaiheita päästäksesi alkuun harjoitusten kanssa:
-
-1. **Kloonaa repositio**: Kloonaa Git-repositorio paikalliselle koneellesi. Huom! Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Tarkemmat ohjeet oman kopion luomiseksi löydät opintojakson ohjeista.
-
-    ```bash
-    git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
-    ```
-
-1. **Avaa projekti VS Code:ssa**
-
-    Täydennä harjoitukset: avaa hakemisto `src/main/java/`. Tässä hakemistossa löydät Java-paketit ja luokat jokaiselle harjoitukselle. Jokaisessa luokassa on keskeneräisiä metodeja ja kommentteja, jotka kuvaavat odotettua toiminnallisuutta. Tehtäväsi on täydentää metodien koodi käyttäen stream:eja ja lambdoja.
-
-    Tarkista ratkaisut: Jokaiselle harjoitukselle on esikirjoitetut yksikkötestit ratkaisujen tarkistamiseksi. Voit suorittaa testit Gradlella:
-
-    ```sh
-    ./gradlew test       # unix
-    gradlew.bat test     # windows
-    ```
-
-1. **Lähetä ratkaisusi**: Kun olet suorittanut harjoitukset, voit lähettää ratkaisusi `git add`-, `git commit`- ja `git push`-komennoilla. Tehtävät tarkistetaan automaattisesti lähetyksen jälkeen samoilla yksikkötesteillä, joita voit käyttää itse tehtävien tarkastamiseen.
+Harjoitus on jaettu osiin, joista jokainen sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen streameja ja lambdoja.
 
 
-## Harjoitusten rakenne
+## Tehtävien tarkastaminen
 
-Jokainen harjoitus on rakennettu seuraavasti:
+Tehtävät tarkastetaan automaattisesti [JUnit-yksikkötesteillä](./src/test/java/). Testeihin perehtyminen ei ole tehtävän suorittamiseksi välttämätöntä, mutta testit voivat auttaa hahmottamaan miten oman koodisi tulee toimia.
 
-    * Java-luokat, jotka sisältävät harjoitukset, löytyvät hakemistosta [src/main/java/](./src/main/java/).
-        * Kustakin luokasta löytyvät metodit, joissa on kommentteja, jotka kuvaavat metodin odotettua toimintaa.
-        * Tehtäväsi on muokata metodien koodia saavuttaaksesi halutun toiminnallisuuden käyttäen Java-virtoja ja lambdoja.
-    * Luokille on kirjoitettu valmiit testit, jotka löytyvät hakemistosta [src/test/java/](./src/test/java/).
-        * Testien tutkiminen ei ole välttämätöntä tehtävien ratkaisemiseksi, mutta siitä voi olla apua.
+💡 *Saat kirjoittaa halutessasi lisää testejä, mutta älä muuta tai poista valmiiksi kirjoitettuja testejä.*
+
+💡 *Tehtävänannossa määritettyjen metodien ja luokkien nimien, parametrien tai paluuarvojen muuttaminen ei ole sallittua testien toimivuuden varmistamiseksi.*
 
 
-Tsemppiä koodaukseen!
+## Osa 1: Laskuoperaatiot Streamien avulla
+
+Opit hyödyntämään IntStream-luokan valmiita metodeja, jotka suorittavat laskuoperaatioita striimeille.
+
+## Osa 2: Optional
+
+Tässä osassa opit myös käsittelemään tilanteita, joissa striimi ei välttämättä sisällä yhtään arvoa, mikä tulee huomioida esimerkiksi keskiarvoa tai ääriarvoja selvitettäessä.
+
+## Osa 3: Listat ja streamit
+
+Tässä osassa opit luomaan striimejä listoista sekä muodostamaan listoja streameista.
+
+## Osa 4: Map-operaatio
+
+Tässä osassa opit muodostamaan uusia streameja muuntamalla olemassa olevan streamin arvoja. Muunnoksissa tarvitset tyypillisesti operaatioita, jotka toteutetaan labmda-lausekkeina.
+
+## Osa 5: Filter-operaatio
+
+Tässä osassa opit suodattamaan striimeistä vain tietyt ehdot täyttävät arvot, jotka tulevat osaksi uutta striimiä.
+
+## Osa 6: Predikaatit
+
+
 
 ----
 
