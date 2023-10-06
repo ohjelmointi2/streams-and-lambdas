@@ -20,7 +20,7 @@ public class PersonStreams {
      */
     public Stream<Person> getAdults(Stream<Person> persons) {
         // Hint: you can call the `age()` method on a Person object to get the age.
-        return persons.filter(p -> p.age() >= 18);
+        return null; // TODO
     }
 
     /**
@@ -38,7 +38,7 @@ public class PersonStreams {
          * The name and age of a Person object can be accessed using the `name()` and
          * `age()` methods.
          */
-        return persons.map(p -> new Person(p.name(), p.age() + 1));
+        return null; // TODO
     }
 
     /**
@@ -51,9 +51,6 @@ public class PersonStreams {
      * @return a stream of Person objects
      */
     public Stream<Person> csvToPersons(Stream<String> csvLines) {
-        return csvLines.map(line -> {
-            String[] parts = line.split(",");
-            return new Person(parts[0], Integer.parseInt(parts[1]));
-        });
+        return null; // TODO
     }
 }
