@@ -3,10 +3,15 @@ package part01;
 import java.util.stream.IntStream;
 
 /**
- * A utility class for generating and utilizing numeric streams. Numbers can
- * be used in generic streams (Stream<Integer>), but Java also provides special
- * streams for primitive types. These special streams, such as IntStream, have
- * additional methods that are useful for numeric operations.
+ * This exercise is about using Java's IntStream class. IntStream is a special
+ * kind of Stream that contains only integer numbers. The IntStream class
+ * provides many useful methods for working with integer numbers, which you will
+ * learn in this exercise.
+ *
+ * It is recommended that you keep the Java API documentation open while doing
+ * this exercise.
+ *
+ * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html
  */
 public class IntegerStreams {
 

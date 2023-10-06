@@ -25,8 +25,9 @@ public class PredicatesWithStreams {
     }
 
     /**
-     * Returns the first positive number in the specified stream. If the stream does
-     * not contain any positive numbers, returns 0.
+     * Returns the first positive number in the specified stream. Zero is not
+     * considered positive in this method. If the stream does not contain any
+     * positive numbers, returns 0.
      *
      * @param numbers the stream of numbers to check
      * @return the first positive number in the stream or 0 if there are no positive

@@ -125,7 +125,7 @@ public class MappingStreams {
          * - otherwise, the string is the number as a string
          */
 
-        // hint: use the mapToObj() method to convert an IntStream to a Stream<String>.
+        // hint: see the mapToObj() method to convert an IntStream to a Stream<String>.
         return null;
     }
 }

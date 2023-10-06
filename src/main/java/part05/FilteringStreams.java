@@ -45,8 +45,9 @@ public class FilteringStreams {
 
     /**
      * Returns a stream that only contains strings that start with the specified
-     * prefix. For example, if the prefix is "https://", the stream must only
-     * contain strings that start with "https://".
+     * prefix. For example, if the prefix is "@", the new stream contains words like
+     * "@ohjelmointi2" and "@python-ohjelmointi" but not words like "java",
+     * "stream" or "lambda".
      *
      * @param strings the stream of strings
      * @param prefix  the prefix that the strings must start with
@@ -69,7 +70,7 @@ public class FilteringStreams {
      * @return a stream of strings that contain the specified substring
      */
     public Stream<String> filterIncludingSubstring(Stream<String> strings, String include) {
-        return null;
+        return strings.filter(s -> s.contains(include));
     }
 
     /**
@@ -83,6 +84,6 @@ public class FilteringStreams {
      * @return a stream of strings that do not contain the specified substring
      */
     public Stream<String> filterNotIncludingSubstring(Stream<String> strings, String exclude) {
-        return null;
+        return strings.filter(s -> !s.contains(exclude));
     }
 }
