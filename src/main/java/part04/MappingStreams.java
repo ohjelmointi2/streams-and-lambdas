@@ -105,4 +105,27 @@ public class MappingStreams {
         // you call from the lambda expression.
         return strings.map(str -> str.endsWith(suffix) ? str.substring(0, str.length() - suffix.length()) : str);
     }
+
+    /**
+     * Returns a stream where all the numbers in the given stream are converted to
+     * strings following the rules of the FizzBuzz game. For example, if the stream
+     * contains the numbers 1, 2, 3, 4, 5, the resulting stream contains the strings
+     * "1", "2", "Fizz", "4", "Buzz".
+     *
+     * @see https://en.wikipedia.org/wiki/Fizz_buzz
+     * @param numbers the stream of numbers to convert
+     * @return a stream of strings
+     */
+    public Stream<String> streamFizzBuzz(IntStream numbers) {
+        /*
+         * The FizzBuzz pattern is as follows:
+         * - if the number is divisible by both 3 and 5, the string is "FizzBuzz"
+         * - if the number is divisible by 3, the string is "Fizz"
+         * - if the number is divisible by 5, the string is "Buzz"
+         * - otherwise, the string is the number as a string
+         */
+
+        // hint: use the mapToObj() method to convert an IntStream to a Stream<String>.
+        return null;
+    }
 }

@@ -57,4 +57,32 @@ public class FilteringStreams {
         // specified prefix.
         return strings.filter(x -> x.startsWith(prefix));
     }
+
+    /**
+     * Returns a stream that only contains strings that contain the specified
+     * substring. For example, if the substring is "ham", the new stream
+     * contains words like "ham", "hamster" and "hammock" but not words like
+     * "java", "stream" or "lambda".
+     *
+     * @param strings the stream of strings
+     * @param include the substring that the strings must contain
+     * @return a stream of strings that contain the specified substring
+     */
+    public Stream<String> filterIncludingSubstring(Stream<String> strings, String include) {
+        return null;
+    }
+
+    /**
+     * Returns a stream that only contains strings that do not contain the
+     * specified substring. For example, if the substring is "ham", the new
+     * stream contains words like "java", "stream" and "lambda" but not words
+     * like "ham", "hamster" or "hammock".
+     *
+     * @param strings the stream of strings
+     * @param exclude the substring that the strings must not contain
+     * @return a stream of strings that do not contain the specified substring
+     */
+    public Stream<String> filterNotIncludingSubstring(Stream<String> strings, String exclude) {
+        return null;
+    }
 }
