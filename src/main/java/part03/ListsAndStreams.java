@@ -7,9 +7,8 @@ import java.util.stream.Stream;
  * In this class, you will learn how to convert a List to a Stream and back.
  * You will also learn how to limit the number of elements in a Stream.
  *
- * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#stream()
- * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html#toList()
- *
+ * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html#stream()
+ * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html#toList()
  */
 public class ListsAndStreams {
 

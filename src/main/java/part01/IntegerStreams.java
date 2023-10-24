@@ -11,7 +11,8 @@ import java.util.stream.IntStream;
  * It is recommended that you keep the Java API documentation open while doing
  * this exercise.
  *
- * @see https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html
+ * See
+ * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html
  */
 public class IntegerStreams {
 

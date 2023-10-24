@@ -6,8 +6,9 @@ import java.util.stream.Stream;
 
 /**
  * In this class, you will learn how to use the map() method to transform the
- * values in a stream. You will also learn how to convert a Stream<Integer> to
- * an IntStream, that has additional methods for numeric operations.
+ * values in a stream. You will also learn how to convert a
+ * {@code Stream<Integer>} to an IntStream, that has additional methods for
+ * numeric operations.
  *
  * Map is a method that is typically given a lambda expression or a method
  * reference as a parameter. The operation is applied to each element in the
@@ -114,7 +115,8 @@ public class MappingStreams {
      * contains the numbers 1, 2, 3, 4, 5, the resulting stream contains the strings
      * "1", "2", "Fizz", "4", "Buzz".
      *
-     * @see https://en.wikipedia.org/wiki/Fizz_buzz
+     * See https://en.wikipedia.org/wiki/Fizz_buzz for more info
+     *
      * @param numbers the stream of numbers to convert
      * @return a stream of strings
      */
