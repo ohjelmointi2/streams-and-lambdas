@@ -33,9 +33,7 @@ public class PredicatesWithStreams {
      */
     public int getFirstPositive(IntStream numbers) {
         /*
-         * hint: use the `findFirst()` method to get the first element in the stream.
-         * Then, use the `isPresent()` method to check if the OptionalInt contains a
-         * value.
+         * hint: you can chain the `filter()`, `findFirst()` and `isPresent()` methods.
          */
         return -1; // TODO
     }
