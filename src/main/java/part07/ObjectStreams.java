@@ -23,10 +23,17 @@ public class ObjectStreams {
     }
 
     /**
-     * Returns a list of the ages of the persons in the specified stream.
+     * Returns a list of the ages of the people in the specified stream. Each
+     * Person object has an 'age()' method that returns the age of that person.
      *
-     * @param persons the stream of persons
-     * @return a list of the ages of the persons
+     * For example, if the stream contains the persons
+     * [Person{name=Ada, age=20}, Person{name=Bob, age=30}, Person{name=Carol,
+     * age=40}], this method returns the list [20, 30, 40].
+     *
+     * See the Person class for more information.
+     *
+     * @param persons the stream of Person objects
+     * @return a list of the ages
      */
     public List<Integer> getAges(Stream<Person> persons) {
         // Hint: This method is very similar to the getLengths() method above!
@@ -34,13 +41,15 @@ public class ObjectStreams {
     }
 
     /**
-     * Returns a list of the names of the persons in the specified stream.
+     * Returns a list of the names of the persons in the specified stream. Each
+     * Person object has a 'name()' method that returns the name of that person.
+     *
      * For example, if the stream contains the persons
      * [Person{name=Ada, age=20}, Person{name=Bob, age=30}, Person{name=Carol,
      * age=40}], this method returns the list ["Ada", "Bob", "Carol"].
      *
-     * @param persons
-     * @return
+     * @param persons the stream of Person objects
+     * @return a list of the names
      */
     public List<String> getNames(Stream<Person> persons) {
         return null; // TODO
