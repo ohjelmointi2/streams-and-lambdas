@@ -41,12 +41,6 @@ public class OptionalValues {
      * @return the maximum value in the stream or 0 if the stream is empty
      */
     public double maximum(IntStream stream) {
-        /*
-         * See the `max()` method in the documentation of IntStream. Note that the sum()
-         * method returns an OptionalInt, which may or may not contain a value, just
-         * like OptionalDouble in the average() method.
-         */
-
-        return -1; // TODO
+        return -1; // TODO: see the IntStream documentation
     }
 }

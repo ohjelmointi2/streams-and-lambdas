@@ -40,7 +40,7 @@ public class MappingStreams {
      *
      * @param numbers
      * @param multiplier
-     * @return
+     * @return a stream of numbers multiplied by the multiplier
      */
     public IntStream multiplyValuesInStream(IntStream numbers, int multiplier) {
         // hint: use the map() method to multiply the values in the stream.
@@ -63,7 +63,10 @@ public class MappingStreams {
 
     /**
      * Returns a stream where all the strings in the given stream are prefixed with
-     * the specified prefix. For example, if the prefix is "https://", the stream
+     * the specified prefix. That is, the given string is added to the beginning of
+     * each string in the stream.
+     *
+     * For example, if the prefix is "https://", the stream
      * {"ohjelmointi2.github.io", "python-ohjelmointi.github.io"} would become
      * {"https://ohjelmointi2.github.io", "https://python-ohjelmointi.github.io"}.
      *
@@ -78,9 +81,11 @@ public class MappingStreams {
 
     /**
      * Returns a stream where all the strings in the given stream are suffixed with
-     * the specified suffix. For example, if the suffix is "@example.com", the
-     * stream {"root", "admin"} would become {"root@example.com",
-     * "admin@example.com"}.
+     * the specified suffix. That is, the given string is added to the end of each
+     * string in the stream.
+     *
+     * For example, if the suffix is "@example.com", the stream {"root", "admin"}
+     * would become {"root@example.com", "admin@example.com"}.
      *
      * @param strings the stream of strings to suffix
      * @param suffix  the suffix to add to each string
@@ -94,12 +99,13 @@ public class MappingStreams {
      * Returns a stream where all the strings in the given stream have the specified
      * suffix removed. For example, if the suffix is ".txt", the stream
      * {"uhat.txt", "mahdollisuudet.txt", "vahvuudet"} would become {"uhat",
-     * "mahdollisuudet", "vahvuudet"}. Note that the suffix is removed only if the
-     * string ends with the suffix.
+     * "mahdollisuudet", "vahvuudet"}.
      *
-     * @param strings
-     * @param suffix
-     * @return
+     * Note that the string is removed only if the string ends with the suffix.
+     *
+     * @param strings a stream of strings
+     * @param suffix  the substring to remove from the end of each string
+     * @return a stream of strings with the suffix removed
      */
     public Stream<String> removeSuffix(Stream<String> strings, String suffix) {
         /*

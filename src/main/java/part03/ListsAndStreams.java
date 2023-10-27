@@ -36,15 +36,18 @@ public class ListsAndStreams {
     }
 
     /**
-     * Returns a stream of the first strings in the specified list. The number of
-     * strings in the stream is limited by the 'count' parameter.
+     * Returns a stream of strings in the given list. The number of strings in the
+     * stream is limited by the 'count' parameter. If the list contains fewer than
+     * 'count' strings, the stream will contain all the strings in the list.
      *
      * @param strings the list of strings
      * @param count   the maximum number of strings to include in the stream
-     * @return a Stream of the first strings in the list
+     * @return a Stream containing at most 'count' strings from the list
      */
     public Stream<String> streamWithLimit(List<String> strings, int count) {
-        return null; // TODO: remember to check the documentation of Stream!
+        // TODO: check the documentation of Stream!
+        // If you want, you can utilize the 'makeStream()' method you implemented above.
+        return null;
     }
 
 }

@@ -1,12 +1,11 @@
 package part05;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 public class FilteringStreamsTest {
@@ -37,11 +36,12 @@ public class FilteringStreamsTest {
 
     @Test
     void testFilterStringsStartingWith() {
-        Stream<String> words = List.of("@ohjelmointi2", "@python-ohjelmointi", "java", "stream", "lambda").stream();
+        Stream<String> words = Stream.of("@ohjelmointi2", "@python", "java@example.com", "stream", "lambda");
 
         Stream<String> wordsStartingWith = solution.filterStringsStartingWith(words, "@");
+
         assertNotNull(wordsStartingWith);
-        assertEquals(List.of("@ohjelmointi2", "@python-ohjelmointi"), wordsStartingWith.toList());
+        assertEquals(List.of("@ohjelmointi2", "@python"), wordsStartingWith.toList());
     }
 
     @Test

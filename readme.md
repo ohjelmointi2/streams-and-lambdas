@@ -1,13 +1,21 @@
 # Streamit ja Lambdat
 
-Tässä tehtävärepositoriossa perehdytään Javan stream-apiin sekä lambda-lausekkeisiin.
+Tässä tehtävärepositoriossa perehdytään Javan stream-apiin sekä lambda-lausekkeisiin. Harjoitus on jaettu osiin, joista jokainen sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen streameja ja lambdoja.
 
-Harjoitus on jaettu osiin, joista jokainen sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen streameja ja lambdoja.
+Suositellut itseopiskelumateriaalit:
+
+* [The Stream API (dev.java)](https://dev.java/learn/api/streams/)
+* [Lambda Expressions in Java (Coding with John, YouTube)](https://youtu.be/tj5sLSFjVj4)
+* [Optionals In Java (Coding with John, YouTube)](https://youtu.be/vKVzRbsMnTQ)
+* [The Java 8 Stream API Tutorial (baeldung.com)](https://www.baeldung.com/java-8-streams)
+
 
 
 ## Tehtävien testaaminen
 
-Tämä tehtäväpaketti ei sisällä ns. "pääohjelmaa". Pääohjelman sijasta paketti sisältää jokaiselle tehtävän osalle omat [JUnit-yksikkötestit](./src/test/java/). Testeihin perehtyminen ei ole tehtävän suorittamiseksi välttämätöntä, mutta testien suorittaminen on ehdottomasti suositeltua, jotta saat palautetta tekemiesi ratkaisujen toimivuudesta. Voit suorittaa yksikkötestit koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html). Halutessasi voit myös toteuttaa omia `main`-metodeja, joiden avulla kokeilet ratkaisujesi toimivuutta.
+Tämä tehtäväpaketti ei sisällä ns. "pääohjelmaa" (`main`-metodia). Pääohjelman sijasta paketti sisältää jokaiselle tehtävän osalle omat [JUnit-yksikkötestit](./src/test/java/). Testeihin perehtyminen ei ole tehtävän suorittamiseksi välttämätöntä, mutta testien suorittaminen on ehdottomasti suositeltua, jotta saat palautetta tekemiesi ratkaisujen toimivuudesta.
+
+Voit suorittaa yksikkötestit koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html). Halutessasi voit myös toteuttaa omia `main`-metodeja, joiden avulla kokeilet ratkaisujesi toimivuutta.
 
 💡 *Saat kirjoittaa halutessasi lisää testejä, mutta älä muuta tai poista valmiiksi kirjoitettuja testejä.*
 
@@ -16,32 +24,29 @@ Tämä tehtäväpaketti ei sisällä ns. "pääohjelmaa". Pääohjelman sijasta 
 
 ## Tehtävän palauttaminen
 
-Palauta tehtävä Gitin `add`-, `commit`- ja `push`-komennoilla edellisten tehtävien tavoin.
-
-Jos teet tehtävää ratkoessasi tiedostoihin muutoksia, jotka haluat perua, voit palauttaa tiedoston edelliseen tilaan `git restore <file>...`-komennolla.
-
+Palauta tehtävä Gitin `add`-, `commit`- ja `push`-komennoilla edellisten tehtävien tavoin. Voit lähettää ratkaisusi arvioitavaksi niin monta kertaa kuin on tarpeen tehtävän määräaikaan asti. Varmista kuitenkin, että viimeisin suoritus tuottaa parhaat pisteet, koska vain viimeisimmät pisteet jäävät voimaan.
 
 
 ## Osa 1: IntegerStreams *(perusteet, 10 %)*
 
-Tässä osassa opit hyödyntämään [Javan IntStream-luokan](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html) valmiita metodeja, jotka suorittavat tyypillisiä laskuoperaatioita striimeille, jotka sisältävät ainoastaan kokonaislukuja. Tehtävän tukena tarvitset Javan dokumentaatiota.
+Tässä osassa opit hyödyntämään [Javan IntStream-luokan](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html) valmiita metodeja, jotka suorittavat tyypillisiä laskuoperaatioita striimeille, jotka sisältävät ainoastaan kokonaislukuja. Tehtävän tukena tarvitset mm. [Javan dokumentaatiota](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html).
 
-Täydennä tiedostossa [IntegerStreams.java](./src/main/java/part01/IntegerStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [IntegerStreamsTest.java](./src/test/java/part01/IntegerStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Täydennä [`IntegerStreams`-luokassa](./src/main/java/part01/IntegerStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [`IntegerStreamsTest`-testiluokalla](./src/test/java/part01/IntegerStreamsTest.java), jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
 
 ```
 ./gradlew test --tests IntegerStreamsTest      # unix
-gradlew.bat test --tests IntegerStreamsTest    # windows
+.\gradlew.bat test --tests IntegerStreamsTest  # windows
 ```
 
 ## Osa 2: OptionalValues *(perusteet, 10 %)*
 
-Tässä osassa opit myös käsittelemään tilanteita, joissa stream ei välttämättä sisällä yhtään arvoa, mikä tulee huomioida esimerkiksi keskiarvoa tai ääriarvoja selvitettäessä.
+Tässä osassa opit käsittelemään tilanteita, joissa stream ei välttämättä sisällä yhtään arvoa, mikä tulee huomioida esimerkiksi keskiarvoa tai ääriarvoja selvitettäessä. Java hyödyntää tällaisissa tilanteissa "optional"-olioita, joista voit lukea lisää Javan dokumentaatiosta: [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html), [OptionalDouble](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalDouble.html) ja [OptionalInt](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html).
 
-Täydennä tiedostossa [OptionalValues.java](./src/main/java/part02/OptionalValues.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [OptionalValuesTest.java](./src/test/java/part02/OptionalValuesTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Täydennä [`OptionalValues`-luokassa](./src/main/java/part02/OptionalValues.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [`OptionalValuesTest`-testiluokalla](./src/test/java/part02/OptionalValuesTest.java), jonka voit suorittaa joko koodieditorisi testaustyökalulla tai Gradlella:
 
 ```
 ./gradlew test --tests OptionalValuesTest      # unix
-gradlew.bat test --tests OptionalValuesTest    # windows
+.\gradlew.bat test --tests OptionalValuesTest  # windows
 ```
 
 ## Osa 3: ListsAndStreams *(perusteet, 10 %)*
@@ -52,7 +57,7 @@ Täydennä tiedostossa [ListsAndStreams.java](./src/main/java/part03/ListsAndStr
 
 ```
 ./gradlew test --tests ListsAndStreamsTest      # unix
-gradlew.bat test --tests ListsAndStreamsTest    # windows
+.\gradlew.bat test --tests ListsAndStreamsTest  # windows
 ```
 
 ## Osa 4: MappingStreams *(perusteet, 10 %)*
@@ -62,7 +67,7 @@ Tässä osassa opit muodostamaan uusia streameja muuntamalla olemassa olevan str
 Täydennä tiedostossa [MappingStreams.java](./src/main/java/part04/MappingStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [MappingStreamsTest.java](./src/test/java/part04/MappingStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
 ```
 ./gradlew test --tests MappingStreamsTest      # unix
-gradlew.bat test --tests MappingStreamsTest    # windows
+.\gradlew.bat test --tests MappingStreamsTest  # windows
 ```
 
 ## Osa 5: FilteringStreams *(perusteet, 10 %)*
@@ -73,7 +78,7 @@ Täydennä tiedostossa [FilteringStreams.java](./src/main/java/part05/FilteringS
 
 ```
 ./gradlew test --tests FilteringStreamsTest      # unix
-gradlew.bat test --tests FilteringStreamsTest    # windows
+.\gradlew.bat test --tests FilteringStreamsTest  # windows
 ```
 
 ## Osa 6: PredicatesWithStreams *(perusteet, 10 %)*
@@ -84,7 +89,7 @@ Täydennä tiedostossa [PredicatesWithStreams.java](./src/main/java/part06/Predi
 
 ```
 ./gradlew test --tests PredicatesWithStreamsTest      # unix
-gradlew.bat test --tests PredicatesWithStreamsTest    # windows
+.\gradlew.bat test --tests PredicatesWithStreamsTest  # windows
 ```
 
 ## Osa 7: ObjectStreams *(soveltava, 10 %)*
@@ -95,7 +100,7 @@ Täydennä tiedostossa [ObjectStreams.java](./src/main/java/part07/ObjectStreams
 
 ```
 ./gradlew test --tests ObjectStreamsTest      # unix
-gradlew.bat test --tests ObjectStreamsTest    # windows
+.\gradlew.bat test --tests ObjectStreamsTest  # windows
 ```
 
 ## Osa 8: PersonStreams *(soveltava, 10 %)*
@@ -106,7 +111,7 @@ Täydennä tiedostossa [PersonStreams.java](./src/main/java/part08/PersonStreams
 
 ```
 ./gradlew test --tests PersonStreamsTest      # unix
-gradlew.bat test --tests PersonStreamsTest    # windows
+.\gradlew.bat test --tests PersonStreamsTest  # windows
 ```
 
 
@@ -118,7 +123,7 @@ Täydennä tiedostossa [PizzaStreams.java](./src/main/java/part09/PizzaStreams.j
 
 ```
 ./gradlew test --tests PizzaStreamsTest      # unix
-gradlew.bat test --tests PizzaStreamsTest    # windows
+.\gradlew.bat test --tests PizzaStreamsTest  # windows
 ```
 
 

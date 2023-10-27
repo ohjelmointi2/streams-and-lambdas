@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class ListsAndStreamsTest {
 
     // the object to be tested
-    ListsAndStreams solution = new ListsAndStreams();
+    private ListsAndStreams solution = new ListsAndStreams();
 
     @Test
     void testMakeStream() {

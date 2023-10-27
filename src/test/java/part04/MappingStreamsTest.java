@@ -1,12 +1,11 @@
 package part04;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 public class MappingStreamsTest {
@@ -58,20 +57,20 @@ public class MappingStreamsTest {
 
     @Test
     void testSuffixAllStrings() {
-        Stream<String> files = Stream.of("foo", "bar", "baz");
-        Stream<String> withExtension = solution.suffixAllStrings(files, ".txt");
+        Stream<String> files = Stream.of("noreply", "abuse", "admin");
+        Stream<String> withExtension = solution.suffixAllStrings(files, "@example.com");
 
         assertNotNull(withExtension);
-        assertEquals(List.of("foo.txt", "bar.txt", "baz.txt"), withExtension.toList());
+        assertEquals(List.of("noreply@example.com", "abuse@example.com", "admin@example.com"), withExtension.toList());
     }
 
     @Test
     void testRemoveSuffix() {
-        Stream<String> files = Stream.of("foo.txt", "bar.txt", "baz.txt");
-        Stream<String> removed = solution.removeSuffix(files, ".txt");
+        Stream<String> files = Stream.of("cv.pdf", "thesis.pdf", "photo.png", "letter.pdf");
+        Stream<String> removed = solution.removeSuffix(files, ".pdf");
 
         assertNotNull(removed);
-        assertEquals(List.of("foo", "bar", "baz"), removed.toList());
+        assertEquals(List.of("cv", "thesis", "photo.png", "letter"), removed.toList());
     }
 
     @Test
@@ -81,6 +80,10 @@ public class MappingStreamsTest {
         Stream<String> fizzBuzz = solution.streamFizzBuzz(numbers);
 
         assertNotNull(fizzBuzz);
-        assertEquals(List.of("1", "2", "Fizz", "4", "Buzz"), fizzBuzz.toList());
+        assertEquals(List.of("1", "2", "fizz", "4", "buzz"), fizzBuzz.map(String::toLowerCase).toList());
+
+        // test that the logic handles multiples of both 3 and 5 correctly
+        IntStream fifteen = IntStream.rangeClosed(15, 15);
+        assertEquals(List.of("fizzbuzz"), solution.streamFizzBuzz(fifteen).map(String::toLowerCase).toList());
     }
 }
