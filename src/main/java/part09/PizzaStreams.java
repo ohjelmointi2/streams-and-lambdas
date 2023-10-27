@@ -23,11 +23,10 @@ public class PizzaStreams {
      */
     public Stream<Pizza> getPizzasWithPineapple(Stream<Pizza> pizzas) {
         /*
-         * You must use the filter() method of the Stream interface to
-         * select the pizzas that have "pineapple" as a topping.
+         * You must use the filter() method of the Stream to select the pizzas that have
+         * "pineapple" as a topping.
          *
-         * You can use the toppings() method of the Pizza class to get
-         * the toppings of a pizza.
+         * You can use the toppings() method of a Pizza class to get the toppings in it.
          */
         return null; // TODO: implement this method
     }
@@ -47,7 +46,8 @@ public class PizzaStreams {
     }
 
     /**
-     * Returns a stream of pizzas that have the given topping.
+     * Returns a stream of pizzas that have the given topping. Toppings are
+     * always in lower case.
      *
      * @param pizzas  a stream of pizzas
      * @param topping the topping to look for
@@ -63,7 +63,8 @@ public class PizzaStreams {
     }
 
     /**
-     * Returns a stream of pizzas that have any of the given toppings.
+     * Returns a stream of pizzas that have any of the toppings given as the
+     * second parameter. Toppings are always in lower case.
      *
      * @param pizzas   a stream of pizzas
      * @param toppings the toppings to look for
@@ -76,8 +77,8 @@ public class PizzaStreams {
          * always in lower case.
          *
          * Hint: you can define another method that checks if a pizza has any
-         * of the given toppings and then use that method as the predicate. You
-         * are also allowed to add new methods in the Pizza class.
+         * of the given toppings and then use that method here. You are also allowed to
+         * add new methods in the Pizza class.
          */
         return null; // TODO: implement this method
     }
@@ -112,8 +113,9 @@ public class PizzaStreams {
          * Like the previous method, but this time you must sort the pizzas
          * by their name in alphabetical order.
          *
-         * You may want to use the compareToIgnoreCase() method of the String
-         * class to compare the names of the pizzas.
+         * Names can be in any casing (upper, lower or mixed). You may want to use the
+         * compareToIgnoreCase() method of the String class to compare the names of the
+         * pizzas.
          */
         return null; // TODO: implement this method
     }
