@@ -2,6 +2,7 @@ package part03;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static utils.StreamAssertions.assertStreamsEqual;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -15,29 +16,33 @@ public class ListsAndStreamsTest {
 
     @Test
     void testMakeStream() {
-        Stream<String> generated = solution.makeStream(List.of("Monica", "Chandler", "Phoebe"));
+        List<String> names = List.of("Monica", "Chandler", "Phoebe");
+
+        // convert the list into a stream
+        Stream<String> generated = solution.makeStream(names);
 
         // check that the names are correct
-        assertNotNull(generated);
-        assertEquals(List.of("Monica", "Chandler", "Phoebe"), generated.toList());
+        assertStreamsEqual(Stream.of("Monica", "Chandler", "Phoebe"), generated);
     }
 
     @Test
     void testMakeList() {
-        List<String> names = List.of("Monica", "Chandler", "Phoebe");
-        List<String> generated = solution.makeList(names.stream());
+        Stream<String> nameStream = Stream.of("Monica", "Chandler", "Phoebe");
 
-        assertNotNull(generated);
-        assertEquals(names, generated);
+        // convert a stream into a list
+        List<String> asList = solution.makeList(nameStream);
+
+        assertNotNull(asList, "makeList must return a list");
+        assertEquals(List.of("Monica", "Chandler", "Phoebe"), asList);
     }
 
     @Test
     void testStreamWithLimit() {
         List<String> names = List.of("Monica", "Chandler", "Phoebe", "Ross", "Rachel", "Joey");
 
-        Stream<String> generated = solution.streamWithLimit(names, 2);
+        // create a stream that contains only the first two names
+        Stream<String> streamOfTwo = solution.streamWithLimit(names, 2);
 
-        assertNotNull(generated);
-        assertEquals(List.of("Monica", "Chandler"), generated.toList());
+        assertStreamsEqual(Stream.of("Monica", "Chandler"), streamOfTwo);
     }
 }

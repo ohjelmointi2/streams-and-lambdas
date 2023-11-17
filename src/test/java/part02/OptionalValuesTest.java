@@ -7,6 +7,8 @@ import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
 public class OptionalValuesTest {
+
+    // the object to be tested
     private OptionalValues solution = new OptionalValues();
 
     @Test
@@ -18,7 +20,7 @@ public class OptionalValuesTest {
 
     @Test
     void testMaximum() {
-        IntStream numbers = IntStream.of(20, 0, 20, 0);
+        IntStream numbers = IntStream.of(-20, 20, 0, 20, 0);
 
         assertEquals(20, solution.maximum(numbers));
     }

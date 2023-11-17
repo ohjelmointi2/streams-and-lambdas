@@ -16,34 +16,37 @@ public class PredicatesWithStreamsTest {
 
     @Test
     void testAllPositive() {
+        // these are all positive
         IntStream positives = IntStream.of(1, 2, 3, 4, 5);
-        IntStream negatives = IntStream.of(-1, -2, -3, -4, -5);
-        IntStream mixed = IntStream.of(-1, 2, -3, 4, -5);
-
         assertTrue(solution.allPositive(positives));
 
+        // these are all negative
+        IntStream negatives = IntStream.of(-1, -2, -3, -4, -5);
         assertFalse(solution.allPositive(negatives));
+
+        // this stream has both positive and negative numbers
+        IntStream mixed = IntStream.of(-1, 2, -3, 4, -5);
         assertFalse(solution.allPositive(mixed));
     }
 
     @Test
     void testGetFirstPositive() {
-        IntStream mixed = IntStream.of(-1, -2, -3, 4, 5);
+        IntStream numbers = IntStream.of(-1, -2, -3, 4, 5);
+        assertEquals(4, solution.getFirstPositive(numbers));
+
+        // this stream has no positive numbers, so the method should return 0
         IntStream negatives = IntStream.of(-1, -2, -3, -4, -5);
-
-        int firstPositive = solution.getFirstPositive(mixed);
-        assertEquals(4, firstPositive);
-
         assertEquals(0, solution.getFirstPositive(negatives));
     }
 
     @Test
     void testContainsNoNulls() {
+        // this stream has no null values, so the method should return true
         Stream<String> noNulls = Stream.of("a", "b", "c");
-        Stream<String> withNulls = Stream.of("a", null, "b", null, "c");
-
         assertTrue(solution.containsNoNulls(noNulls));
+
+        // this stream has null values, so the method should return false
+        Stream<String> withNulls = Stream.of("a", null, "b", null, "c");
         assertFalse(solution.containsNoNulls(withNulls));
     }
-
 }

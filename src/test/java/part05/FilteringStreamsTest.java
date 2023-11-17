@@ -1,11 +1,11 @@
 package part05;
 
+import static utils.StreamAssertions.assertStreamsEqual;
+
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 public class FilteringStreamsTest {
@@ -15,12 +15,11 @@ public class FilteringStreamsTest {
 
     @Test
     void testFilterEvenNumbers() {
-        IntStream numbers = IntStream.of(1995, 2011, 2019, 2022);
+        IntStream numbers = IntStream.of(11, 22, 33, 44, 55, 66, 77);
 
         IntStream evenNumbers = solution.filterEvenNumbers(numbers);
 
-        assertNotNull(evenNumbers);
-        assertEquals(List.of(2022), evenNumbers.boxed().toList());
+        assertStreamsEqual(IntStream.of(22, 44, 66), evenNumbers);
     }
 
     @Test
@@ -29,39 +28,35 @@ public class FilteringStreamsTest {
 
         IntStream numbersBetween = solution.filterNumbersBetween(numbers, 2000, 2020);
 
-        assertNotNull(numbersBetween);
-        assertEquals(List.of(2011, 2019), numbersBetween.boxed().toList());
-
+        assertStreamsEqual(IntStream.of(2011, 2019), numbersBetween);
     }
 
     @Test
     void testFilterStringsStartingWith() {
         Stream<String> words = Stream.of("@ohjelmointi2", "@python", "java@example.com", "stream", "lambda");
 
-        Stream<String> wordsStartingWith = solution.filterStringsStartingWith(words, "@");
+        // should produce a stream containing only the strings that start with "@"
+        Stream<String> filtered = solution.filterStringsStartingWith(words, "@");
 
-        assertNotNull(wordsStartingWith);
-        assertEquals(List.of("@ohjelmointi2", "@python"), wordsStartingWith.toList());
+        assertStreamsEqual(Stream.of("@ohjelmointi2", "@python"), filtered);
     }
 
     @Test
     void testFilterIncludingSubstring() {
         Stream<String> words = List.of("ham", "hamster", "hammock", "java", "stream", "lambda").stream();
 
-        Stream<String> included = solution.filterIncludingSubstring(words, "ham");
+        // should contain "ham" and "hammock" but not "java" or "lambda"
+        Stream<String> wordsWithHam = solution.filterIncludingSubstring(words, "ham");
 
-        assertNotNull(included);
-        assertEquals(List.of("ham", "hamster", "hammock"), included.toList());
+        assertStreamsEqual(Stream.of("ham", "hamster", "hammock"), wordsWithHam);
     }
 
     @Test
     void testFilterNotIncludingSubstring() {
         Stream<String> words = List.of("ham", "hamster", "hammock", "java", "stream", "lambda").stream();
 
-        Stream<String> result = solution.filterNotIncludingSubstring(words, "ham");
+        Stream<String> wordsWithoutHam = solution.filterNotIncludingSubstring(words, "ham");
 
-        assertNotNull(result);
-        assertEquals(List.of("java", "stream", "lambda"), result.toList());
+        assertStreamsEqual(Stream.of("java", "stream", "lambda"), wordsWithoutHam);
     }
-
 }

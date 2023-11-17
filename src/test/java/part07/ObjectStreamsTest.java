@@ -22,9 +22,9 @@ public class ObjectStreamsTest {
 
     @Test
     void testGetLengths() {
-        List<Integer> lengths = solution.getLengths(List.of("a", "bb", "ccc").stream());
+        List<Integer> lengths = solution.getLengths(Stream.of("a", "bb", "ccc"));
 
-        assertNotNull(lengths);
+        assertNotNull(lengths, "getLengths must return a list");
         assertEquals(List.of(1, 2, 3), lengths);
     }
 
@@ -32,7 +32,7 @@ public class ObjectStreamsTest {
     void testGetAges() {
         List<Integer> ages = solution.getAges(persons.stream());
 
-        assertNotNull(ages);
+        assertNotNull(ages, "getAges must return a list");
         assertEquals(List.of(20, 30, 40), ages);
     }
 
@@ -40,16 +40,16 @@ public class ObjectStreamsTest {
     void testGetNames() {
         List<String> names = solution.getNames(persons.stream());
 
-        assertNotNull(names);
+        assertNotNull(names, "getNames must return a list");
         assertEquals(List.of("Ada", "Bob", "Carol"), names);
     }
 
     @Test
     void testGetAverageAge() {
         double averageAge = solution.getAverageAge(persons.stream());
-
         assertEquals(30, averageAge);
+
+        // check that the method works with an empty stream
         assertEquals(0, solution.getAverageAge(Stream.empty()));
     }
-
 }
