@@ -44,5 +44,6 @@ tasks.named('test') {
         showCauses true
         events "PASSED", "FAILED"
         showStandardStreams true
+        exceptionFormat "full"
     }
 }
