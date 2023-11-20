@@ -2,6 +2,7 @@ package part01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static utils.StreamAssertions.assertStreamsEqual;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -29,10 +30,24 @@ public class IntegerStreamsTest {
     }
 
     @Test
+    void testNumbersBetweenWhenFromAndToAreEqual() {
+        IntStream answer = solution.numbersBetween(42, 42);
+
+        assertStreamsEqual(IntStream.of(42), answer);
+    }
+
+    @Test
     void testSum() {
         IntStream numbers = IntStream.of(10, 20, 12);
 
         assertEquals(42, solution.sum(numbers), "sum method must return the sum of values in the stream");
+    }
+
+    @Test
+    void testSumWhenStreamIsEmpty() {
+        IntStream empty = IntStream.of();
+
+        assertEquals(0, solution.sum(empty));
     }
 
     @Test

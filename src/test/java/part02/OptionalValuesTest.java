@@ -19,10 +19,24 @@ public class OptionalValuesTest {
     }
 
     @Test
+    void testAverageForEmptyStream() {
+        IntStream empty = IntStream.empty();
+
+        assertEquals(0, solution.average(empty));
+    }
+
+    @Test
     void testMaximum() {
         IntStream numbers = IntStream.of(-20, 20, 0, 20, 0);
 
         assertEquals(20, solution.maximum(numbers));
+    }
+
+    @Test
+    void testMaximumForEmptyStream() {
+        IntStream empty = IntStream.empty();
+
+        assertEquals(0, solution.maximum(empty));
     }
 
     /*
