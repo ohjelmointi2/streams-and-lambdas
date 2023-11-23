@@ -98,10 +98,11 @@ public class MappingStreams {
     /**
      * Returns a stream where all the strings in the given stream have the specified
      * suffix removed. For example, if the suffix is ".txt", the stream
-     * {"uhat.txt", "mahdollisuudet.txt", "vahvuudet"} would become {"uhat",
-     * "mahdollisuudet", "vahvuudet"}.
+     * {"uhat.txt", "mahdollisuudet.txt", "vahvuudet.csv"} would become {"uhat",
+     * "mahdollisuudet", "vahvuudet.csv"}.
      *
-     * Note that the string is removed only if the string ends with the suffix.
+     * Note that if a string in the stream does not end with the given suffix, it
+     * should not be changed.
      *
      * @param strings a stream of strings
      * @param suffix  the substring to remove from the end of each string
