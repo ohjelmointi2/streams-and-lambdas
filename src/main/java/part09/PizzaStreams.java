@@ -26,7 +26,8 @@ public class PizzaStreams {
          * You must use the filter() method of the Stream to select the pizzas that have
          * "pineapple" as a topping.
          *
-         * You can use the toppings() method of a Pizza class to get the toppings in it.
+         * You can use the toppings() method of a Pizza to get the toppings as a
+         * list of strings.
          */
         return null; // TODO: implement this method
     }
