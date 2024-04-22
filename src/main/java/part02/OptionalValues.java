@@ -40,7 +40,7 @@ public class OptionalValues {
      * @param stream the IntStream to get the maximum value from
      * @return the maximum value in the stream or 0 if the stream is empty
      */
-    public double maximum(IntStream stream) {
+    public int maximum(IntStream stream) {
         return -1; // TODO: see the IntStream documentation
     }
 }
