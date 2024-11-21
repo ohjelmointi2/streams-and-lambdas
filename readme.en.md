@@ -45,11 +45,11 @@ Complete the methods in the [`OptionalValues`](./src/main/java/part02/OptionalVa
 .\gradlew.bat test --tests OptionalValuesTest  # windows
 ```
 
-## Osa 3: ListsAndStreams *(perusteet, 10 %)*
+## Part 3: ListsAndStreams *(basics, 10 %)*
 
-Tässä osassa opit luomaan striimejä listoista sekä muodostamaan listoja streameista.
+In this section, you will learn how to create streams from lists and form lists from streams.
 
-Täydennä tiedostossa [ListsAndStreams.java](./src/main/java/part03/ListsAndStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [ListsAndStreamsTest.java](./src/test/java/part03/ListsAndStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [ListsAndStreams.java](./src/main/java/part03/ListsAndStreams.java) according to their comments and hints. This part of the task is tested with the [ListsAndStreamsTest.java](./src/test/java/part03/ListsAndStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests ListsAndStreamsTest      # unix
