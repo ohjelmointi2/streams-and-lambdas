@@ -1,3 +1,6 @@
+> [!NOTE]  
+> The English translation for this exercise can be found in [this file](./readme.en.md).
+
 # Streamit ja Lambdat
 
 Tässä tehtävärepositoriossa perehdytään Javan stream-apiin sekä lambda-lausekkeisiin. Harjoitus on jaettu osiin, joista jokainen sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen streameja ja lambdoja.
