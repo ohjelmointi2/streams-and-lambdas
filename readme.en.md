@@ -1,26 +1,23 @@
-# Streamit ja Lambdat
+# Streams and lambdas
 
-Tässä tehtävärepositoriossa perehdytään Javan stream-apiin sekä lambda-lausekkeisiin. Harjoitus on jaettu osiin, joista jokainen sisältää Java-luokan, jossa on keskeneräisiä metodeja. Tavoitteesi on täydentää näiden metodien logiikkaa käyttäen streameja ja lambdoja.
+In this task repository, you will explore Java's Stream API and lambda expressions. The exercise is divided into parts, each containing a Java class with incomplete methods. Your goal is to complete the logic of these methods using streams and lambdas.
 
-Suositellut itseopiskelumateriaalit:
+Recommended self-study materials:
 
 * [The Stream API (dev.java)](https://dev.java/learn/api/streams/)
 * [Lambda Expressions in Java (Coding with John, YouTube)](https://youtu.be/tj5sLSFjVj4)
 * [Optionals In Java (Coding with John, YouTube)](https://youtu.be/vKVzRbsMnTQ)
 * [The Java 8 Stream API Tutorial (baeldung.com)](https://www.baeldung.com/java-8-streams)
 
+## Testing the exercises
 
+This exercise package does not include a "main program" (`main` method). Instead of a main program, the package includes [JUnit unit tests](./src/test/java/) for each part of the task. Familiarizing yourself with the tests is not necessary to complete the task, but running the tests is highly recommended to get feedback on the functionality of your solutions.
 
-## Tehtävien testaaminen
+You can run the unit tests using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or the [Gradle automation tool](https://docs.gradle.org/current/userguide/java_testing.html). If you wish, you can also create your own `main` methods to test the functionality of your solutions.
 
-Tämä tehtäväpaketti ei sisällä ns. "pääohjelmaa" (`main`-metodia). Pääohjelman sijasta paketti sisältää jokaiselle tehtävän osalle omat [JUnit-yksikkötestit](./src/test/java/). Testeihin perehtyminen ei ole tehtävän suorittamiseksi välttämätöntä, mutta testien suorittaminen on ehdottomasti suositeltua, jotta saat palautetta tekemiesi ratkaisujen toimivuudesta.
+💡 *You may write additional tests if you wish, but do not modify or delete the pre-written tests.*
 
-Voit suorittaa yksikkötestit koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html). Halutessasi voit myös toteuttaa omia `main`-metodeja, joiden avulla kokeilet ratkaisujesi toimivuutta.
-
-💡 *Saat kirjoittaa halutessasi lisää testejä, mutta älä muuta tai poista valmiiksi kirjoitettuja testejä.*
-
-💡 *Tehtävänannossa määritettyjen metodien ja luokkien nimien, parametrien tai paluuarvojen muuttaminen ei ole sallittua testien toimivuuden varmistamiseksi.*
-
+💡 *Changing the names, parameters, or return values of the methods and classes specified in the task instructions is not allowed to ensure the tests function correctly.*
 
 ## Tehtävän palauttaminen
 
