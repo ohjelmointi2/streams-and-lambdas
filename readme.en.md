@@ -19,16 +19,15 @@ You can run the unit tests using your code editor's testing tool ([VS Code](http
 
 💡 *Changing the names, parameters, or return values of the methods and classes specified in the task instructions is not allowed to ensure the tests function correctly.*
 
-## Tehtävän palauttaminen
+## Submitting the exercise
 
-Palauta tehtävä Gitin `add`-, `commit`- ja `push`-komennoilla edellisten tehtävien tavoin. Voit lähettää ratkaisusi arvioitavaksi niin monta kertaa kuin on tarpeen tehtävän määräaikaan asti. Varmista kuitenkin, että viimeisin suoritus tuottaa parhaat pisteet, koska vain viimeisimmät pisteet jäävät voimaan.
+Submit the task using Git's `add`, `commit`, and `push` commands as you did with previous tasks. You can submit your solution for evaluation as many times as needed until the task deadline. However, ensure that the latest submission produces the best scores, as only the most recent scores will be considered.
 
+## Part 1: IntegerStreams *(basics, 10 %)*
 
-## Osa 1: IntegerStreams *(perusteet, 10 %)*
+In this part, you will learn to utilize the ready-made methods of Java's [IntStream class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html), which perform typical arithmetic operations on streams containing only integers. You will need resources such as [Java documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html) to support this task.
 
-Tässä osassa opit hyödyntämään [Javan IntStream-luokan](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html) valmiita metodeja, jotka suorittavat tyypillisiä laskuoperaatioita striimeille, jotka sisältävät ainoastaan kokonaislukuja. Tehtävän tukena tarvitset mm. [Javan dokumentaatiota](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/IntStream.html).
-
-Täydennä [`IntegerStreams`-luokassa](./src/main/java/part01/IntegerStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [`IntegerStreamsTest`-testiluokalla](./src/test/java/part01/IntegerStreamsTest.java), jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the [`IntegerStreams`](./src/main/java/part01/IntegerStreams.java) class according to their comments and hints. This part of the task is tested with the [`IntegerStreamsTest`](./src/test/java/part01/IntegerStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests IntegerStreamsTest      # unix
