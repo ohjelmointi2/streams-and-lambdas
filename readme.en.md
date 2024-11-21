@@ -34,11 +34,11 @@ Complete the methods in the [`IntegerStreams`](./src/main/java/part01/IntegerStr
 .\gradlew.bat test --tests IntegerStreamsTest  # windows
 ```
 
-## Osa 2: OptionalValues *(perusteet, 10 %)*
+## Part 2: OptionalValues *(basics, 10 %)*
 
-Tässä osassa opit käsittelemään tilanteita, joissa stream ei välttämättä sisällä yhtään arvoa, mikä tulee huomioida esimerkiksi keskiarvoa tai ääriarvoja selvitettäessä. Java hyödyntää tällaisissa tilanteissa "optional"-olioita, joista voit lukea lisää Javan dokumentaatiosta: [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html), [OptionalDouble](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalDouble.html) ja [OptionalInt](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html).
+In this section, you will learn how to handle situations where a stream may not contain any values, which should be considered when determining averages or extreme values. Java utilizes "optional" objects in such cases, which you can read more about in the Java documentation: [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html), [OptionalDouble](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalDouble.html) and [OptionalInt](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/OptionalInt.html).
 
-Täydennä [`OptionalValues`-luokassa](./src/main/java/part02/OptionalValues.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [`OptionalValuesTest`-testiluokalla](./src/test/java/part02/OptionalValuesTest.java), jonka voit suorittaa joko koodieditorisi testaustyökalulla tai Gradlella:
+Complete the methods in the [`OptionalValues`](./src/main/java/part02/OptionalValues.java) class according to their comments and hints. This part of the task is tested with the [`OptionalValuesTest`](./src/test/java/part02/OptionalValuesTest.java) test class, which you can run either with your code editor's testing tool or with Gradle.
 
 ```
 ./gradlew test --tests OptionalValuesTest      # unix
