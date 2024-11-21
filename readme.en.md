@@ -56,32 +56,33 @@ Complete the methods in the file [ListsAndStreams.java](./src/main/java/part03/L
 .\gradlew.bat test --tests ListsAndStreamsTest  # windows
 ```
 
-## Osa 4: MappingStreams *(perusteet, 10 %)*
+## Part 4: MappingStreams *(basics, 10 %)*
 
-Tässä osassa opit muodostamaan uusia streameja muuntamalla olemassa olevan streamin arvoja. Muunnoksissa tarvitset operaatioita, jotka toteutetaan tyypillisesti lambda-lausekkeina.
+In this section, you will learn how to create new streams by transforming the values of an existing stream. These transformations typically require operations implemented as lambda expressions.
 
-Täydennä tiedostossa [MappingStreams.java](./src/main/java/part04/MappingStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [MappingStreamsTest.java](./src/test/java/part04/MappingStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [MappingStreams.java](./src/main/java/part04/MappingStreams.java) according to their comments and hints. This part of the task is tested with the [MappingStreamsTest.java](./src/test/java/part04/MappingStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
+
 ```
 ./gradlew test --tests MappingStreamsTest      # unix
 .\gradlew.bat test --tests MappingStreamsTest  # windows
 ```
 
-## Osa 5: FilteringStreams *(perusteet, 10 %)*
+## Part 5: FilteringStreams *(basics, 10 %)*
 
-Hyvin tavallinen streamien käyttötapaus on aineiston suodattaminen eli filtteröinti. Tässä osassa opit suodattamaan striimeistä vain tietyt ehdot täyttävät arvot, jotka tulevat osaksi uutta striimiä.
+A very common use case for streams is filtering data. In this section, you will learn how to filter streams to include only values that meet certain conditions, which will become part of a new stream.
 
-Täydennä tiedostossa [FilteringStreams.java](./src/main/java/part05/FilteringStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [FilteringStreamsTest.java](./src/test/java/part05/FilteringStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [FilteringStreams.java](./src/main/java/part05/FilteringStreams.java) according to their comments and hints. This part of the task is tested with the [FilteringStreamsTest.java](./src/test/java/part05/FilteringStreamsTest.java)a test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests FilteringStreamsTest      # unix
 .\gradlew.bat test --tests FilteringStreamsTest  # windows
 ```
 
-## Osa 6: PredicatesWithStreams *(perusteet, 10 %)*
+## Part 6: PredicatesWithStreams *(basics, 10 %)*
 
-Tässä tehtävässä opit tarkastamaan koko striimiä koskevia ehtoja.
+In this task, you will learn how to check conditions that apply to the entire stream.
 
-Täydennä tiedostossa [PredicatesWithStreams.java](./src/main/java/part06/PredicatesWithStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [PredicatesWithStreamsTest.java](./src/test/java/part06/PredicatesWithStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [PredicatesWithStreams.java](./src/main/java/part06/PredicatesWithStreams.java) according to their comments and hints. This part of the task is tested with the [PredicatesWithStreamsTest.java](./src/test/java/part06/PredicatesWithStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests PredicatesWithStreamsTest      # unix
