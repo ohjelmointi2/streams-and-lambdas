@@ -89,22 +89,22 @@ Complete the methods in the file [PredicatesWithStreams.java](./src/main/java/pa
 .\gradlew.bat test --tests PredicatesWithStreamsTest  # windows
 ```
 
-## Osa 7: ObjectStreams *(soveltava, 10 %)*
+## Part 7: ObjectStreams *(soveltava, 10 %)*
 
-Tässä osassa sovellamme Javan streameja oman [Person](./src/main/java/person/Person.java)-luokan kanssa. Tulet huomaamaan, että omien luokkien käsittely streameilla on lopulta hyvin samanlaista kuin Javan valmiiden tietotyyppien käsittely.
+In this section, we will apply Java streams with our own [Person](./src/main/java/person/Person.java) class. You will find that handling your own classes with streams is ultimately very similar to handling Java's built-in data types.
 
-Täydennä tiedostossa [ObjectStreams.java](./src/main/java/part07/ObjectStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [ObjectStreamsTest.java](./src/test/java/part07/ObjectStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [ObjectStreams.java](./src/main/java/part07/ObjectStreams.java) according to their comments and hints. This part of the task is tested with the [ObjectStreamsTest.java](./src/test/java/part07/ObjectStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests ObjectStreamsTest      # unix
 .\gradlew.bat test --tests ObjectStreamsTest  # windows
 ```
 
-## Osa 8: PersonStreams *(soveltava, 10 %)*
+## Part 8: PersonStreams *(applying, 10 %)*
 
-Tässä osassa sovellamme oppimaamme ja muunnamme merkkijonoja [Person](./src/main/java/person/Person.java)-olioiksi ja toisin päin. Opimme myös tekemään soveltavia operaatioita, kuten kaikkien striimissä olevien henkilöiden iän kasvattamisen yhdellä vuodella.
+In this section, we will apply what we have learned to convert strings into [Person](./src/main/java/person/Person.java) objects and vice versa. We will also learn to perform operations such as increasing the age of all persons in the stream by one year.
 
-Täydennä tiedostossa [PersonStreams.java](./src/main/java/part08/PersonStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [PersonStreamsTest.java](./src/test/java/part08/PersonStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [PersonStreams.java](./src/main/java/part08/PersonStreams.java) according to their comments and hints. This part of the task is tested with the [PersonStreamsTest.java](./src/test/java/part08/PersonStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests PersonStreamsTest      # unix
@@ -112,20 +112,19 @@ Täydennä tiedostossa [PersonStreams.java](./src/main/java/part08/PersonStreams
 ```
 
 
-## Osa 9: PizzaStreams *(edistynyt, 20 %)*
+## Part 9: PizzaStreams *(advanced, 20 %)*
 
-Tehtävän viimeisessä osassa käsittelemme [Pizzoja](./src/main/java/pizza/Pizza.java) ja pizzojen täytteitä streamien avulla. Keskitymme erityisesti ananakseen, joka on täytteenä erityisen kiistanalainen. Ohessa harjoittelemme soveltavia operaatioita, kuten streamien järjestämistä.
+In the final part of the task, we will work with [Pizzas](./src/main/java/pizza/Pizza.java) and pizza toppings using streams. We will focus particularly on pineapple, which is a highly controversial topping. Along the way, we will practice operations such as sorting streams.
 
-Täydennä tiedostossa [PizzaStreams.java](./src/main/java/part09/PizzaStreams.java) olevat metodit niiden kommenttien ja vinkkien mukaisesti. Tehtävän tämä osa testataan [PizzaStreamsTest.java](./src/test/java/part09/PizzaStreamsTest.java)-testiluokalla, jonka voit suorittaa joko koodieditorisi testaustyökalulla, tai Gradlella:
+Complete the methods in the file [PizzaStreams.java](./src/main/java/part09/PizzaStreams.java) according to their comments and hints. This part of the task is tested with the [PizzaStreamsTest.java](./src/test/java/part09/PizzaStreamsTest.java) test class, which you can run either with your code editor's testing tool or with Gradle:
 
 ```
 ./gradlew test --tests PizzaStreamsTest      # unix
 .\gradlew.bat test --tests PizzaStreamsTest  # windows
 ```
 
+## License and authors
 
-## Lisenssi ja tekijät
+This exercise is made by Teemu Havulinna and translated to English by Kalle Ilves and it is licensed under a [Creative Commons BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Tämän tehtävän on kehittänyt Teemu Havulinna ja se on lisensoitu [Creative Commons BY-NC-SA -lisenssillä](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-Tehtävänannon, käsiteltävien tiedostojen sekä lähdekoodien toteutuksessa on hyödynnetty ChatGPT 3.5:ttä sekä GitHub copilot -tekoälyavustinta.
+ChatGPT 3.5 language model and GitHub copilot AI assistant has been used to implement the exercise.
