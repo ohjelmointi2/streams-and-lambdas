@@ -42,7 +42,7 @@ public class PersonStreams {
     }
 
     /**
-     * Returns a stream of People objects that have been created based on the lines
+     * Returns a stream of Person objects that have been created based on the lines
      * in the specified stream of Strings. Each string contains the name and age of
      * a person separated by a comma.
      *
