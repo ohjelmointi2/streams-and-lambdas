@@ -13,7 +13,7 @@ Recommended self-study materials:
 
 This exercise package does not include a "main program" (`main` method). Instead of a main program, the package includes [JUnit unit tests](./src/test/java/) for each part of the task. Familiarizing yourself with the tests is not necessary to complete the task, but running the tests is highly recommended to get feedback on the functionality of your solutions.
 
-You can run the unit tests using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or the [Gradle automation tool](https://docs.gradle.org/current/userguide/java_testing.html). If you wish, you can also create your own `main` methods to test the functionality of your solutions.
+You can run the unit tests using your [code editor's testing tool](https://code.visualstudio.com/docs/java/java-testing) or the [Gradle automation tool](https://docs.gradle.org/current/userguide/java_testing.html). If you wish, you can also create your own `main` methods to test the functionality of your solutions.
 
 💡 *You may write additional tests if you wish, but do not modify or delete the pre-written tests.*
 

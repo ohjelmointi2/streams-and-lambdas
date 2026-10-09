@@ -1,4 +1,4 @@
-> [!NOTE]  
+> [!NOTE]
 > The English translation for this exercise can be found in [this file](./readme.en.md).
 
 # Streamit ja Lambdat
@@ -18,7 +18,7 @@ Suositellut itseopiskelumateriaalit:
 
 Tämä tehtäväpaketti ei sisällä ns. "pääohjelmaa" (`main`-metodia). Pääohjelman sijasta paketti sisältää jokaiselle tehtävän osalle omat [JUnit-yksikkötestit](./src/test/java/). Testeihin perehtyminen ei ole tehtävän suorittamiseksi välttämätöntä, mutta testien suorittaminen on ehdottomasti suositeltua, jotta saat palautetta tekemiesi ratkaisujen toimivuudesta.
 
-Voit suorittaa yksikkötestit koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html). Halutessasi voit myös toteuttaa omia `main`-metodeja, joiden avulla kokeilet ratkaisujesi toimivuutta.
+Voit suorittaa yksikkötestit [koodieditorisi testaustyökalulla](https://code.visualstudio.com/docs/java/java-testing) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html). Halutessasi voit myös toteuttaa omia `main`-metodeja, joiden avulla kokeilet ratkaisujesi toimivuutta.
 
 💡 *Saat kirjoittaa halutessasi lisää testejä, mutta älä muuta tai poista valmiiksi kirjoitettuja testejä.*
 
