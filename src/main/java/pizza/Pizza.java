@@ -13,7 +13,7 @@ import java.util.List;
  *
  * You don't need to understand the details of the Record class, it's enough
  * that you know that it's a class that has a set of fields and
- * that it has a constructor that takes the values for thos fields as
+ * that it has a constructor that takes the values for those fields as
  * parameters.
  *
  * The attributes can be accessed using the automatically generated "getter"
